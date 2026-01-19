@@ -82,7 +82,7 @@
 	<div class="max-w-250 p-10">
 		<div class="flex justify-center gap-x-2">
 			<button class="cursor-pointer" onclick={onLeft}><StepBack fill={'white'} /></button>
-			<div class={`flex w-200 ${zoomedWin ? 'flex-2' : ''} items-center justify-center`}>
+			<div class={`flex w-250 ${zoomedWin ? 'flex-2' : ''} items-center justify-center`}>
 				<Scene
 					id={game.activeSceneId}
 					width="full"
@@ -106,12 +106,13 @@
 				</div>
 			{/if}
 		</div>
-		<div class="mt-5 p-5 font-mono">{message}</div>
-		<div class="mt-4 flex flex-col items-start rounded-xl bg-gray-500/10">
+		<div class="mt-5 w-full p-5 text-center font-mono italic">{message}</div>
+		<p class="mt-4 font-bold uppercase">Inventory</p>
+		<div class="mt-2 flex flex-col items-start rounded bg-gray-200/10">
 			<div class="flex h-20 items-center justify-center gap-x-2 p-3">
 				{#each game.inventory as item}
 					<button
-						class={`rounded-lg border border-white/10 p-2 hover:bg-white/10 ${game.selectedItem == item.id ? 'bg-white/10' : ''}`}
+						class={`rounded border border-white/10 p-2 hover:bg-white/10 ${game.selectedItem == item.id ? 'bg-white/10' : ''}`}
 						onclick={() => (game.selectedItem = item.id)}
 					>
 						<img src={item.icon} alt={item.name} class="h-10 w-10" />

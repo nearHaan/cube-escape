@@ -12,10 +12,10 @@
 <div
 	class="hidden h-screen w-screen flex-col items-center justify-center bg-black text-white lg:flex"
 >
-	<div class=" flex h-20 w-full items-center justify-center bg-gray-950">
-		<h1 class="font-mono text-2xl">Escape Room</h1>
+	<div class=" flex h-20 w-full items-center justify-center">
+		<h1 class="text-2xl font-bold uppercase">Escape Room</h1>
 	</div>
-	<div class="flex-1">{@render children()}</div>
+	<div class="flex-1 overflow-auto">{@render children()}</div>
 </div>
 
 <div
