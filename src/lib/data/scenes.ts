@@ -100,7 +100,7 @@ export const scenes: Record<string, SceneType> = {
 				h: 0.05,
 				action: 'press',
 				disabledText: 'Seems it is locked',
-				successText: 'Cool. you found a Screwdriver'
+				successText: 'Cool. You found a ... TRIANGLE THING!'
 			},
 			{ id: 'drawer2', x: 0.343, y: 0.64, w: 0.148, h: 0.05, action: 'press' },
 			{

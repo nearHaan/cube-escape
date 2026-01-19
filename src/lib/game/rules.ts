@@ -12,7 +12,7 @@ const PROJECTOR_ANS = [
 const BINARY_BOX_ANS = '011011';
 const LOCKER_BOX_ANS = '8172';
 const LOCKER_ANS_LENGTH = 4;
-const COMPUTER_ANS = 'LIGHT';
+const COMPUTER_ANS = 'GREEN';
 const SHAPE_BOX_ANS = '2143';
 const SHAPE_ANS_LENGTH = 4;
 
